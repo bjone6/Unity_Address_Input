@@ -11,7 +11,8 @@ public class NewBehaviorScript : MonoBehaviour
 	public TMP_InputField inputField;
 	public CesiumGeoreference cesiumGeoreference;
 	public CesiumCameraController cesiumCameraController;
-	private string apiKey = "AIzaSyBB8ui9AOFIwWEbSn-kpJ1ifm9HSy-dFhs";
+	//INSERT YOUR GOOGLE MAPS PLATFORM KEY IN THE apiKey quotes
+	private string apiKey = "";
 	private string urlLocation = "";
 	private string urlElevation = "";
 	private double lat;
