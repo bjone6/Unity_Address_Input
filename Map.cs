@@ -39,7 +39,6 @@ public class NewBehaviorScript : MonoBehaviour
 
 	IEnumerator GetGoogleMapLocation()
 	{
-		//Test URL in webbrowser first: https://maps.googleapis.com/maps/api/geocode/json?address=826+Entrada+Street+Bossier+City+LA+71111&key=AIzaSyBB8ui9AOFIwWEbSn-kpJ1ifm9HSy-dFhs
 		urlLocation = "https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&key=" + apiKey;
 		UnityWebRequest webRequest = UnityWebRequest.Get(urlLocation);
 		yield return webRequest.SendWebRequest();
