@@ -20,13 +20,13 @@ public class NewBehaviorScript : MonoBehaviour
 	private double elevation;
 	private string latLon;
 	// Plus signs used because Google maps can't use spaces
-	private string address = "826+Entrada+Street+Bossier+City+LA+71111";
+	private string address = "2031+Kings+Highway+Shreveport+LA+71103";
 	
 	// Start is called before the first frame update
 	void Start()
 	{
 		cesiumGeoreference.originAuthority = CesiumGeoreferenceOriginAuthority.LongitudeLatitudeHeight;
-		inputField.text = "826 Entrada Street Bossier City LA 71111";
+		inputField.text = "2031 Kings Highway Shreveport LA 71103";
 		StartCoroutine(GetGoogleMapLocation());
 	}
 	
